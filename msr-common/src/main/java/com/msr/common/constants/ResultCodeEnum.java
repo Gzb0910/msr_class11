@@ -1,12 +1,15 @@
 package com.msr.common.constants;
+
 import lombok.Getter;
+
 /**
- * @author Gzb
+ * @author tom
  * @version V1.0
  * @Package com.msr.common.constants
- * @date 2020/6/8 12:42
+ * @date 2020/6/8 9:59
  * @Copyright © 株式会社多言语系统研究所
  */
+
 @Getter
 public enum ResultCodeEnum {
 

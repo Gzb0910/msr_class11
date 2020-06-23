@@ -1,5 +1,13 @@
 package com.msr.common.vo;
 
+/**
+ * @author tom
+ * @version V1.0
+ * @Package com.msr.common.vo
+ * @date 2020/6/8 10:02
+ * @Copyright © 株式会社多言语系统研究所
+ */
+
 import com.msr.common.constants.ResultCodeEnum;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -8,13 +16,6 @@ import lombok.Data;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * @author Gzb
- * @version V1.0
- * @Package com.msr.common.vo
- * @date 2020/6/8 12:43
- * @Copyright © 株式会社多言语系统研究所
- */
 @Data
 @ApiModel(value = "全局统一返回结果")
 public class R {

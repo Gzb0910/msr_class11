@@ -1,21 +1,21 @@
 package com.msr.common.exception;
 
+/**
+ * @author tom
+ * @version V1.0
+ * @Package com.msr.common.exception
+ * @date 2020/6/8 14:41
+ * @Copyright © 株式会社多言语系统研究所
+ */
+
 import com.msr.common.constants.ResultCodeEnum;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
-/**
- * @author Gzb
- * @version V1.0
- * @Package com.msr.common.exception
- * @date 2020/6/8 13:37
- * @Copyright © 株式会社多言语系统研究所
- */
 @Data
 @ApiModel(value = "全局异常")
 public class MSRException extends RuntimeException {
-
     @ApiModelProperty(value = "状态码")
     private Integer code;
 
@@ -37,6 +37,7 @@ public class MSRException extends RuntimeException {
         super(resultCodeEnum.getMessage());
         this.code = resultCodeEnum.getCode();
     }
+
     @Override
     public String toString() {
         return "MSRException{" +

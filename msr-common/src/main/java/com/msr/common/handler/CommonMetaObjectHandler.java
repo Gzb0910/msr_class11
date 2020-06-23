@@ -8,15 +8,15 @@ import org.springframework.stereotype.Component;
 import java.util.Date;
 
 /**
- * @author Gzb
+ * @author tom
  * @version V1.0
  * @Package com.msr.common.handler
- * @date 2020/6/8 13:32
+ * @date 2020/6/8 14:04
  * @Copyright © 株式会社多言语系统研究所
  */
 @Component
 @Slf4j
-public class CommonMetaObjectHandler implements MetaObjectHandler {
+public class CommonMetaObjectHandler  implements MetaObjectHandler {
 
     @Override
     public void insertFill(MetaObject metaObject) {

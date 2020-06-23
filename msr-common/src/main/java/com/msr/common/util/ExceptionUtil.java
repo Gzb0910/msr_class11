@@ -1,18 +1,19 @@
 package com.msr.common.util;
 
+/**
+ * @author tom
+ * @version V1.0
+ * @Package com.msr.common.util
+ * @date 2020/6/8 15:08
+ * @Copyright © 株式会社多言语系统研究所
+ * 异常的工具类
+ */
+
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 
-/**
- * @author Gzb
- * @version V1.0
- * @Package com.msr.common.util
- * @date 2020/6/8 14:31
- * @Copyright © 株式会社多言语系统研究所
- */
 public class ExceptionUtil {
-
     public static String getMessage(Exception e) {
         StringWriter sw = null;
         PrintWriter pw = null;

@@ -13,9 +13,10 @@
     <packaging>pom</packaging>
     <version>0.0.1-SNAPSHOT</version>
     <name>msr-parent</name>
-    <description>MSR项目父工程</description>
+    <description>MSR父工程</description>
 
     <properties>
+        <spring-cloud.version>Greenwich.SR3</spring-cloud.version>
         <java.version>1.8</java.version>
         <msr.version>0.0.1-SNAPSHOT</msr.version>
         <mybatis-plus.version>3.0.5</mybatis-plus.version>
@@ -37,9 +38,15 @@
         <json.version>20170516</json.version>
     </properties>
 
+    <!--加载子模块-->
     <modules>
         <module>../msr-common</module>
         <module>../msr-edu</module>
+        <module>../msr-ucenter</module>
+        <module>../msr-statistics</module>
+        <module>../renren-fast</module>
+        <module>../renren-generator</module>
+        <module>../msr-gateway</module>
     </modules>
 
     <dependencyManagement>

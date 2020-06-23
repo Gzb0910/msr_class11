@@ -16,13 +16,15 @@ import org.junit.Test;
 import java.util.ArrayList;
 
 /**
- * @author Gzb
+ * @author tom
  * @version V1.0
  * @Package com.msr.edu
- * @date 2020/6/5 11:21
+ * @date 2020/6/5 10:41
  * @Copyright © 株式会社多言语系统研究所
  */
+
 public class CodeGenerator {
+
     @Test
     public void genCode() {
         String moduleName = "edu";
@@ -49,7 +51,7 @@ public class CodeGenerator {
         dsc.setUrl("jdbc:mysql://192.168.56.10:3306/msr_" + moduleName);
         dsc.setDriverName("com.mysql.cj.jdbc.Driver");
         dsc.setUsername("root");
-        dsc.setPassword("123456");
+        dsc.setPassword("a62134787");
         dsc.setDbType(DbType.MYSQL);
         mpg.setDataSource(dsc);
 

@@ -6,13 +6,6 @@ import lombok.Data;
 
 import java.io.Serializable;
 
-/**
- * @author Gzb
- * @version V1.0
- * @Package com.msr.edu.query
- * @date 2020/6/8 12:50
- * @Copyright © 株式会社多言语系统研究所
- */
 @ApiModel(value = "Teacher查询对象", description = "讲师查询对象封装")
 @Data
 public class TeacherQuery implements Serializable {
@@ -26,7 +19,7 @@ public class TeacherQuery implements Serializable {
     private Integer level;
 
     @ApiModelProperty(value = "查询开始时间", example = "2019-01-01 10:10:10")
-    private String begin;
+    private String begin;//注意，这里使用的是String类型，前端传过来的数据无需进行类型转换
 
     @ApiModelProperty(value = "查询结束时间", example = "2019-12-01 10:10:10")
     private String end;
